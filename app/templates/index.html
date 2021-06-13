@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<table>
-    {% for row in grid %}
-    <tr>
-        {% for cell in row %}
-        <td class="{{ cell }}">
-            <div class="square"/>
-        </td>
-        {% endfor %}
-    </tr>
-    {% endfor %}
-</table>
+<h1>Enter Your Data</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.data.label }}<br>
+        {{ form.data(cols=50, rows=50) }}<br>
+    </p>
+    {{ form.submit() }}
+</form>
 {% endblock %}
