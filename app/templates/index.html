@@ -2,21 +2,14 @@
 
 {% block content %}
 <table>
+    {% for row in grid %}
     <tr>
-        <td>
+        {% for cell in row %}
+        <td class="{{ cell }}">
             <div class="square"/>
         </td>
-        <td class="filled">
-            <div class="square"/>
-        </td>
+        {% endfor %}
     </tr>
-    <tr>
-        <td class="empty">
-            <div class="square"/>
-        </td>
-        <td>
-            <div class="square"/>
-        </td>
-    </tr>
+    {% endfor %}
 </table>
 {% endblock %}
