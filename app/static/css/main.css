@@ -1,0 +1,29 @@
+td {
+    border: 1px solid black;
+    margin: 1px;
+    padding: 1px;
+    background-color: #BBBBBB;
+}
+
+.filled {
+    background-color: black;
+}
+
+.empty {
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    height: 16px;
+    width: 16px;
+}
+
+body {
+    padding-top: 50px;
+}

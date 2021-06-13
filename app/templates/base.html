@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <title>Paint By Numbers Plus: {{url_for('static', filename='css/main.css') }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>

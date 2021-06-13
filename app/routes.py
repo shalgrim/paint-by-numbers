@@ -1,7 +1,8 @@
 from app import app
+from flask import render_template
 
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return "Grid Goes Here"
+    return render_template('index.html', height=30, width=20)
